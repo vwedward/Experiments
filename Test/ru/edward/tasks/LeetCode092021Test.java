@@ -23,12 +23,12 @@ class LeetCode092021Test {
 
     @Test
     void addTwoNumbers() {
-        //243
+        //[2,4,3]
         LeetCode092021.ListNode curNode1;
         curNode1 = new LeetCode092021.ListNode(3);
         curNode1 = new LeetCode092021.ListNode(4, curNode1);
         curNode1 = new LeetCode092021.ListNode(2, curNode1);
-        //564
+        //[5,6,4]
         LeetCode092021.ListNode curNode2;
         curNode2 = new LeetCode092021.ListNode(4);
         curNode2 = new LeetCode092021.ListNode(6, curNode2);
@@ -36,7 +36,7 @@ class LeetCode092021Test {
 
         LeetCode092021.ListNode resNode = LeetCode092021.addTwoNumbers(curNode1, curNode2);
 
-        //708
+        //[7,0,8] 342 + 465 = 807
         assertEquals(7, resNode.val);
         resNode = resNode.next;
         assertEquals(0, resNode.val);
